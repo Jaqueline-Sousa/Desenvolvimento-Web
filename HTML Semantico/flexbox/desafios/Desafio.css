@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.1rem ;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 50px;
+   background-color: #000;
+   color: #fff;
+   height: 10vh;
+
+}
+
+ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
+
+main{
+    margin: 50px auto;
+    width: 80vw;
+    border: 1px solid black;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 32vh 16vh 16vh 16vh;
+}
+
+.cor-caixa{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.noticia-2{
+    grid-column: 2/4;
+}
+
+.noticia-3{
+    grid-column: 4/6;
+}
+
+.propaganda{
+    grid-row: 2/4;
+}
+
+.prod-1{
+    
+}
