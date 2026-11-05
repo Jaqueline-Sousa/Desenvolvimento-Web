@@ -1,14 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --cor-principal: #F9F9FF;
+    --cor-fundo: #740001;
+    --cor-header: #740001;     
+    --cor-texto-principal: #f0e6d2;
+    --cor-titulo-principal: #f0e6d2;
+    --cor-secundaria: #fff; 
+    --cor-fundo-icon: #d3a625;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto; 
     font-size: 1.1rem;
     text-light: #f0e6d2;      
     text-muted: #a39b8b;          
     border-gold: rgba(224, 172, 0, 0.4);
     glow: 0 0 15px rgba(224, 172, 0, 0.25);
+}
+
+body{
+    
+    background-color: #F9F9FF;
 }
 
 header{
@@ -21,11 +39,14 @@ header{
     color: #fff;
 }
 
+
 ul{
     display: flex;
     list-style: none;
     gap: 40px;
 }
+
+
 
 a{
     text-decoration: none;
@@ -36,16 +57,19 @@ a{
     font-weight: 700;
 }
 
+
+.
 .simbolo-Logo {
     color: #d3a625; 
 }
 
-i {
-    color: #eeb500; 
-    font-size: 1.4rem;
-    transition: color 0.3s ease, filter 0.3s ease;
+.icone-login i{
+    color: #4338CA;
+    font-size: 2rem;
+    margin-left: 15px;
 }
-  
+
+
 
 i:hover {
     color: #ffdb57;
@@ -56,12 +80,13 @@ img{
    
  }
 
- main{
-    padding: 80px;
- }
 
- h1{
-    font-family: 'Cinzel', serif;
+main{
+    padding:  50px 250px; 
+}
+
+h1{
+   
     font-size: 2.2rem;
     color: var(--primary-gold);
     letter-spacing: 2px;
@@ -70,26 +95,125 @@ img{
 
  }
 
- .p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    font-style: italic;
+
+.area-inicio{
+    display: flex;
+    gap: 3vw;
 }
 
- .area-inicio{
-    display: flex;
-    gap: 10vh;
- }
+.area-imagem{
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #4338CA;
+
+}
 
 .nome-destaque{
-    font-size: 4rem;
-    color: #eeb500;
+    font-size: 3rem;
+    color: #4338CA;
+}
+
+.botoes-iniciais{
+    margin: 50px 0px;
 }
 
 .btn-ver-projetos{
-    background-color: #4338c4;
-    color: #fff;
+    background-color: #4338CA;
+    color: #FFF;
     padding: 15px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.btn-github{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #4338CA;
+}
+.card-foco{
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+
+}
+.card-foco i,span{
+    color: #d3a625;
+    font-weight: 700;
+     }
+  
+
+.card-foco p {
+    margin-bottom: 10px;
+}
+
+
+.icone-foco{
+    background-color: #ffdb57;
+    padding: 15px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.minha-jornada{
+    margin-top: 100px;
+    
+}
+
+.titulo-minha-jornada span{
+    
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.titulo-minha-jornada h2{
+    background-color: antiquewhite;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.titulo-minha-jornada{
+    font-size: 1.3rem;
+}
+
+.cards{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-html{
+    background-color: beige;
+    padding: 50px;
+    max-width: 33%;
+    border-radius: 15px;
+}
+
+.topo-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-html{
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.fase-1{
+background-color: aqua;
+padding: 15px;
+border-radius: 20px;
+font-size: 0.8rem;
+color: black;
+}
+
+.card-html h3{
+    font-size: 1rem;
+}
+
+.barra-card{
+    color: #740001;
 }
