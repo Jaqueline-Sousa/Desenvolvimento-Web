@@ -5,10 +5,10 @@
     --bg-header: #0e1217;
     --cor-principal: #F9F9FF;
     --cor-fundo: #740001;
-    --cor-header: #740001;     
+    --cor-header: #740001;
     --cor-texto-principal: #f0e6d2;
     --cor-titulo-principal: #d4af37;
-    --cor-secundaria: #fff; 
+    --cor-secundaria: #fff;
     --cor-fundo-icon: #d3a625;
     --primary-gold: #d4af37;
     --vinho-grifforina: #800020;
@@ -19,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto; 
+    font-optical-sizing: auto;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    background-color: var(--bg-header);   
+    background-color: var(--bg-header);
     height: 8vh;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@ a {
 }
 
 .simbolo-logo {
-    color: var(--cor-fundo-icon); 
+    color: var(--cor-fundo-icon);
 }
 
 .icone-login i {
@@ -69,12 +69,12 @@ i:hover {
     filter: drop-shadow(0 0 6px rgba(238, 181, 0, 0.8));
 }
 
-img {
-    width: 20vw; 
+main img.area-imagem {
+    width: 20vw;
 }
 
 main {
-    padding: 50px 250px; 
+    padding: 50px 250px;
 }
 
 h1 {
@@ -136,7 +136,8 @@ h1 {
     align-items: center;
 }
 
-.card-foco i, .card-foco span {
+.card-foco i,
+.card-foco span {
     color: var(--cor-fundo-icon);
     font-weight: 700;
 }
@@ -158,18 +159,19 @@ h1 {
 }
 
 .minha-jornada {
-    margin-top: 100px;
+    
 }
 
-.titulo-minha-jornada {
+.titulos {
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-top: 100px;
 }
 
-.titulo-minha-jornada h2 {
+.titulos h2 {
     background-color: #1f1a17;
     color: var(--primary-gold);
     border: 1px solid rgba(212, 175, 55, 0.4);
@@ -184,31 +186,70 @@ h1 {
     gap: 30px;
 }
 
-.card-html, .card-css, .card-responsivo {
+.card-html,
+.card-css,
+.card-responsivo {
     background-color: #2a2421;
     border: 1px solid #453830;
-    padding: 40px 30px;
+    padding: 30px;
     max-width: 33%;
     border-radius: 15px;
     color: #e6dfd5;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards>div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cards .container-imagem {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cards .container-imagem img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.badge-atividade {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #2a2421;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .topo-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.icon-html, .icon-css, .icon-responsivo {
+.icon-html,
+.icon-css,
+.icon-responsivo {
     background-color: #3e322a;
     border: 1px solid #5a483c;
-    padding: 15px;
+    padding: 12px 15px;
     border-radius: 10px;
     color: var(--primary-gold);
 }
 
-.fase-1, .em-pratica, .conceito {
+.fase-1,
+.em-pratica,
+.conceito {
     background-color: #3e322a;
     border: 1px solid #5a483c;
     padding: 8px 15px;
@@ -217,15 +258,52 @@ h1 {
     color: #f3e5ab;
 }
 
-.card-html h3, .card-css h3, .card-responsivo h3 {
+.card-html h3,
+.card-css h3,
+.card-responsivo h3 {
     font-size: 1.2rem;
     color: var(--primary-gold);
     margin-bottom: 12px;
 }
 
+.card-html p,
+.card-css p,
+.card-responsivo p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #d1c7bd;
+    margin-bottom: 20px;
+}
+
 .barra-card {
-    color: var(--primary-gold);
-    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-demo,
+.btn-codigo {
+    background-color: var(--vinho-grifforina);
+    color: #f3e5ab;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-codigo {
+    background-color: #1e242c;
+    color: #d9c5a0;
+}
+
+.btn-demo:hover,
+.btn-codigo:hover {
+    filter: brightness(1.2);
 }
 
 .area-reflexao {
@@ -235,4 +313,90 @@ h1 {
     border: 1px solid var(--primary-gold);
     border-radius: 12px;
     color: #f3e5ab;
+}
+
+.ambiente-trabalho .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ambiente-trabalho .cards>div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.area-contato {
+    margin-top: 100px;
+    background: linear-gradient(135deg, #1a1e24 0%, #14181d 100%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.area-contato .cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.area-contato .cards>div {
+    background-color: #221c19;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.area-contato .cards>div:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 8px 15px rgba(212, 175, 55, 0.15);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-html,
+    .card-css,
+    .card-responsivo {
+        max-width: 100% !important;
+        width: 100%;
+    }
+}
+
+
+.site-footer {
+    background-color: #0e1217;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a19588;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 20px;
+    }
 }
