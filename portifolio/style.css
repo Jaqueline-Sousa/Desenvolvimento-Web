@@ -392,11 +392,72 @@ h1 {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .site-footer {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 20px;
+@media (max-width: 440px){
+    header{
+        flex-wrap: wrap;
+        height: 18vh;
+        padding: 10px 0;
+        justify-content: center;
+        column-gap: 100px;
     }
+    
+ul{
+gap: 7px;
+border-top: 3px solid #0e1217;
+
+font-size: 1rem;
+
+}
+a{
+    font-size: 1rem;
+}
+
+.icone-login{
+    order: -1;
+}
+.logo{
+order: -1;
+}
+
+.area-inicio{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1, .nome-destaque{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.area-texto p{
+font-size: 1.1rem;
+margin-top: 15px;
+}
+
+.botoes-iniciais{
+    display: flex;
+}
+
+.btn-ver-projetos{
+    flex: 2;
+    display: flex;
+}
+
+.btn-github{
+    flex: 1;
+    text-align: center;
+}
+
+main img.area-imagem{
+    width: 95vw;
+    margin-top: 10px;
+
+}
+
+.titulos{
+    font-size: 1rem;
+}
+
 }
